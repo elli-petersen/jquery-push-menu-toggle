@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <title>Push Menu Toggle w/ localStorage</title>
+  
+  <link href="stylesheet.css" rel="stylesheet" />
+
+</head>
+<body>
+
+  <nav class="pm-menu-container" id="js-pm-push-menu">
+    <h2>Menu</h2>
+    <p>This is the content within the menu.</p>
+    <p><a href="#">Add some links!</a></p>
+  </nav>
+  <div class="pm-push-pixel" id="js-pm-push-pixel"></div>
+  <div class="pm-content-container">
+    <h2>Content</h2>
+    <p>This is the content container that will be pushed by the menu.</p>
+    <p>Refresh the page, or close and reopen the tab to see the menu state maintained.</p>
+    <button id="js-pm-toggle-button">Show/Hide Push Menu</button>
+    <button onclick="localStorage.clear(); alert('localStorage has been cleared');">Clear localStorage</button>
+  </div>
+
+</body>
+</html>
